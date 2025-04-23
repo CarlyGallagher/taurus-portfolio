@@ -148,7 +148,7 @@ nav ul li a:hover::after {
 }
 
 .aboutMe-col-1 img {
-    width: 100%;
+    width: 65%;
     border-radius: 15px;
 }
 
@@ -158,12 +158,21 @@ nav ul li a:hover::after {
 
 
 #about .container .row h1 {
-    font-size: 300%;
+    font-size: 400%;
 }
+
+#about .container .row p{
+    font-size: 120%;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* -------------tabs---------------- */
 
 .tab-titles {
 display: flex;
 margin: 20px 0 40px; 
+color: #fff;
 }
 
 .tab-link  {
@@ -197,4 +206,12 @@ margin: 20px 0 40px;
 .tab-contents ul li span {
     color: var(--tabs-head);
     font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
 }

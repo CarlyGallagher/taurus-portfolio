@@ -13,7 +13,6 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Resume</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Socials</a></li>
@@ -32,30 +31,37 @@
                     <img src="images/Subject.png" alt="Carly Gallagher">
                 </div>
                 <div class="aboutMe-col-2">
-                    <h1 style="color: white; text-shadow: 3px 3px 0 #9a5803">About Me</h1>
-                    <p>A short boring bio blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah
+                    <h1 style="color: white; text-shadow: 3px 3px 0 #9a5803">What Am I About?</h1>
+                    <p>
+                        Say hello to your new favorite team member!<br>
+                        <br>
+                        Im a full stack web developer creating dynamic and responsive web applications.<br> 
+                        I have a strong foundation in both front-end and back-end development while pursuing knowledge on other technologies.<br>
+                         My goal is to create user-friendly and visually appealing websites that provide a seamless experience for users.
+                        <br>
+                        <br>
+                        Lets talk why CSS is actually fun!
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-link active-link">Skills</p>
-                        <p class="tab-link">Experience</p>
-                        <p class="tab-link">Education</p>
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>ui/ux</span><br>Designing web/app interfaces</li>
-                            <li><span>web Development</span><br>Web app development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                            <li><span>Javascript</span><br>Creating responsive web pages using Javascript</li>
+                            <li><span>CSS/HTML5</span><br>Creating easy to understand and pleasing UI</li>
+                            <li><span>MongoDB</span><br>Proficent in setting up databases with SQL and NoSQL</li>
+                            <li><span>REACT</span><br>Create dynaminc single page applications</li>
+                            <li><span>API</span><br>Ability to develop API's using express.js and integrate API's such as bootstrap</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>could be you</span><br>Let me work on your project please</li>
+                            <li><span>Could be you 🫵</span><br>Let me work on your project please 🥺</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2016</span><br>Communications AA from Solano Community College</li>
                             <li><span>2023</span><br>Coding Bootcamp: Full Stack Web Development Certificate from UC Riverside</li>
@@ -66,6 +72,23 @@
 
         </div>
     </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        };
+    </script>
 </body>
 
 </html>
