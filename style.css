@@ -34,13 +34,18 @@ h3 {
 
 .header-text{
     font-size: 170%;
+    padding-top: 10%;
+    padding-left: 5%;
 }
 
-#header-text {
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
-    background-color: #c9995b;
+.header-text h3,
+.header-text h1 {
+    display: inline; /* Ensures the background only spans the text */
+    background-color: #9a5803; /* Background color for the text */
+    color: white; /* Text color */
+    padding: 5px; /* Optional: Add padding around the text */
+    text-shadow: 3px 3px 0 #c9995b; /* Optional: Add text shadow */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 
