@@ -32,20 +32,25 @@ h3 {
     background-position: center;
 }
 
-.header-text{
-    font-size: 170%;
-    padding-top: 10%;
-    padding-left: 5%;
+.header-text {
+    display: flex; /* Use Flexbox for vertical alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the text horizontally */
+    gap: 10px; /* Add spacing between the h3 and h1 */
+    font-size: 190%;
+    padding-top:10%;
+    padding-right: 60%;
 }
 
 .header-text h3,
 .header-text h1 {
-    display: inline; /* Ensures the background only spans the text */
+    display: inline-block; /* Ensures the background only spans the text */
     background-color: #9a5803; /* Background color for the text */
     color: white; /* Text color */
-    padding: 5px; /* Optional: Add padding around the text */
+    padding: 5px; /* Add padding around the text */
     text-shadow: 3px 3px 0 #c9995b; /* Optional: Add text shadow */
     border-radius: 5px; /* Optional: Add rounded corners */
+    text-align: center; /* Center-align the text */
 }
 
 
