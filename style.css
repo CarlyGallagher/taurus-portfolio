@@ -86,3 +86,8 @@ nav ul li a:hover::after{
     height: 80vh;
     background-color: #c9995b;
 }
+
+#about img {
+    margin: 2%;
+    height: 50vh;
+}
