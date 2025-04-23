@@ -2,6 +2,7 @@
     --primary-color: #c9995b;
     --shadow-dark: #9a5803;
     --text-color: #ffffff;
+    --tabs-head: #804a03; 
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -165,7 +166,7 @@ display: flex;
 margin: 20px 0 40px; 
 }
 
-.tab-links{
+.tab-link  {
     margin-right: 50px ;
     font-size: 18px;
     font-weight: 500;
@@ -173,7 +174,7 @@ margin: 20px 0 40px;
     position: relative; 
 }
 
-.tab-links::after {
+.tab-link::after {
     content: "";
     width: 0;
     height: 3px;
@@ -184,7 +185,7 @@ margin: 20px 0 40px;
     transition: 0.5s
 }
 
-.tab-links.active-links::after {
+.tab-link.active-link::after {
     width: 50%;
 }
 
@@ -194,6 +195,6 @@ margin: 20px 0 40px;
 }
 
 .tab-contents ul li span {
-    color: #9a5803;
+    color: var(--tabs-head);
     font-size: 14px;
 }
