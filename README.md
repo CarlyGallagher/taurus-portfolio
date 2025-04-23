@@ -15,3 +15,6 @@
 * Its done when their are social links leading to those sites (linkedin, github, upwork, instagram, stack overflow)
 
 * Its done has a fun facts sections with interactive clicking 
+
+* its done when a cherub swings across with the title
+
