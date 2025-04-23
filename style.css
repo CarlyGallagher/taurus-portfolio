@@ -19,6 +19,8 @@ body{
 
 h1 {
     font-family: abril fatface;
+    color: white; 
+    text-shadow: 3px 3px 0 #9a5803;
 }
 h3 {
     font-family: abril fatface;
@@ -109,9 +111,24 @@ nav ul li a:hover::after{
 #about {
     height: 80vh;
     background-color: #c9995b;
+    display: flex;
+    align-items: flex-start;
 }
 
 #about img {
-    margin: 2%;
+    margin: 4%;
     height: 50vh;
+}
+
+#about .container .row {
+    float: right;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#about .container .row h1{
+    font-size: 300%;
 }
