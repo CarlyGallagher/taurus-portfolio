@@ -132,9 +132,10 @@ nav ul li a:hover::after {
 /* --------about section-------- */
 
 #about {
-    height: 80vh;
+    height: 100vh;
     background-color: #c9995b;
     padding: 80px 0;
+    margin: 50px;
 }
 
 .row {
@@ -177,7 +178,7 @@ color: #fff;
 
 .tab-link  {
     margin-right: 50px ;
-    font-size: 18px;
+    font-size: 150%;
     font-weight: 500;
     cursor: pointer;
     position: relative; 
@@ -205,7 +206,13 @@ color: #fff;
 
 .tab-contents ul li span {
     color: var(--tabs-head);
-    font-size: 14px;
+    font-size: 120%;
+}
+
+.tab-contents ul li  {
+    font-size: 100%;
+    line-height: 1.5;
+    margin-top: 5px;
 }
 
 .tab-contents{
@@ -214,4 +221,19 @@ color: #fff;
 
 .tab-contents.active-tab {
     display: block;
+}
+
+/* ------Services--------------- */
+
+#services {
+padding: 30px 0;
+
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
 }
