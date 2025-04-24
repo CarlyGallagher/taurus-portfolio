@@ -278,6 +278,19 @@ display: inline-block;
 
 /* ---------Contact/Footer------------ */
 
-#contact{
+#footer {
     padding:30px;
+}
+
+.contact-row {
+    display: flex;
+    gap: 40px; /* adjust spacing between the two items */
+    flex-wrap: wrap; /* optional: wraps on small screens */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
 }
