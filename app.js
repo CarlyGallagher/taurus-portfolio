@@ -39,7 +39,4 @@ document.querySelectorAll('.contact-item').forEach(item => {
     });
 });
 
-
-
-
-
+// custom sitewide cursor//
