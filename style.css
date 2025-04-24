@@ -268,3 +268,10 @@ font-size: 12px;
 margin-top: 20px;
 display: inline-block;
 }
+
+.services-list :hover {
+    color: #e7e7e7;
+    background-color: black;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
