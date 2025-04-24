@@ -149,8 +149,8 @@ nav ul li a:hover::after {
 }
 
 .aboutMe-col-1 img {
-    width: 65%;
-    border-radius: 15px;
+    width: 80%;
+    border-radius: 5px;
 }
 
 .aboutMe-col-2{
@@ -274,4 +274,10 @@ display: inline-block;
     background-color: black;
     transform: translateY(-10px);
     transition: all 0.3s ease;
+}
+
+/* ---------Contact/Footer------------ */
+
+#contact{
+    padding:30px;
 }
