@@ -289,8 +289,41 @@ display: inline-block;
 }
 
 .contact-item {
+    position: relative ;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
+    text-decoration: none;
+    cursor: pointer ;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-item:hover h2 {
+text-decoration: underline;
+}
+
+#contact-item i {
+    text-decoration: none;
+}
+
+.copy-tooltip {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-item.show-tooltip .copy-tooltip {
+    opacity: 1;
+    transform: translateY(0);
 }
