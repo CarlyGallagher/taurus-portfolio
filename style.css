@@ -181,7 +181,6 @@ color: #fff;
     margin-right: 50px ;
     font-size: 150%;
     font-weight: 500;
-    cursor: pointer;
     position: relative; 
 }
 
@@ -332,5 +331,5 @@ text-decoration: underline;
 
 /* ------changes cursor to cherub------- */
 button, a, .tab-link, .contact-item {
-    cursor: url('images/Subject-3.png') 5 16, pointer;
+    cursor: url('images/Subject-3.png') 5 16, auto;
 }
