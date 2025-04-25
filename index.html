@@ -12,13 +12,15 @@
 <body>
     <div id="header">
         <div class="container">
+            <!-- NAVIGATION BAR AND DROP DOWN MENU -->
             <div class="hero">
                 <nav>
                     <ul>
                         <li><a href="./images/Carly Gallagher Software Engineer.pdf" target="_blank">Resume</a></li>
                         <li><a href="#footer">Contact</a></li>
-                        <li><a href="#" onclick="toggleSocial()">Socials</a></li>
+                        <li class="socials"><a href="#" onclick="toggleSocial()">Socials</a></li>
                     </ul>
+                    <!-- gives drop down menu bones -->
                     <div class="sub-menu-wrap" id="SubMenu">
                         <div class="sub-menu">
                             <div class="social-menu">
@@ -43,12 +45,15 @@
             </div>
         </div>
     </div>
+    <!-- ABOUT SECTION -->
     <div id="about">
         <div class=container>
             <div class="row">
+                <!-- Main About Me Section -->
                 <div class="aboutMe-col-1">
                     <img src="images/Software Developer.jpg" alt="Carly Gallagher">
                 </div>
+                <!-- About Me Text Section -->
                 <div class="aboutMe-col-2">
                     <h1 style="color: white; text-shadow: 3px 3px 0 #9a5803">What Am I About?</h1>
                     <p>
@@ -63,6 +68,7 @@
                         <br>
                         Lets talk why CSS is actually fun!
                     </p>
+                    <!-- About Me Links -->
                     <div class="tab-titles">
                         <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-link" onclick="opentab('experience')">Experience</p>
@@ -86,7 +92,7 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2016</span><br>Communications AA from Solano Community College</li>
-                            <li><span>2023</span><br>Coding Bootcamp: Full Stack Web Development Certificate from UC
+                            <li><span>2023</span><br>Full Stack Web Development Certificate from UC
                                 Riverside</li>
                         </ul>
                     </div>
@@ -95,6 +101,7 @@
 
         </div>
     </div>
+    <!-- SERVICES SECTION -->
     <div id="services">
         <div class="container">
             <h1 style="color: white; text-shadow: 3px 3px 0 #9a5803">My Services</h1>
