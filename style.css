@@ -2,7 +2,7 @@
     --primary-color: #c9995b;
     --shadow-dark: #9a5803;
     --text-color: #ffffff;
-    --tabs-head: #804a03; 
+    --tabs-head: #804a03;
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -133,16 +133,24 @@ nav ul li a:hover::after {
 
 /* --------drop down menu for socials------- */
 
-ul li ul.socials li{
- display: block;
+ul li ul.socials {
+    display: flex;
+    gap: 10px;
+    /* spacing between icons */
+    justify-content: center;
+    /* optional: centers the row */
+    align-items: center;
+    /* optional: vertical alignment */
+    padding: 10px;
 }
 
+
 ul li ul.socials {
-width: 100%;
-background-color: #c9995b;
-position:absolute;
-z-index: 999;
-display: none;
+    width: 100%;
+    background-color: #c9995b;
+    position: absolute;
+    z-index: 999;
+    display: none;
 
 }
 
@@ -154,9 +162,10 @@ ul li:hover ul.socials {
     display: block;
 }
 
-ul li ul.socials li a i{
-    display: block;
-    
+ul li ul.socials li a i {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
 }
 
 /* --------about section-------- */
@@ -183,7 +192,7 @@ ul li ul.socials li a i{
     border-radius: 5px;
 }
 
-.aboutMe-col-2{
+.aboutMe-col-2 {
     flex-basis: 60%;
 }
 
@@ -192,7 +201,7 @@ ul li ul.socials li a i{
     font-size: 400%;
 }
 
-#about .container .row p{
+#about .container .row p {
     font-size: 120%;
     line-height: 1.5;
     margin-top: 20px;
@@ -201,16 +210,16 @@ ul li ul.socials li a i{
 /* -------------tabs---------------- */
 
 .tab-titles {
-display: flex;
-margin: 20px 0 40px; 
-color: #fff;
+    display: flex;
+    margin: 20px 0 40px;
+    color: #fff;
 }
 
-.tab-link  {
-    margin-right: 50px ;
+.tab-link {
+    margin-right: 50px;
     font-size: 150%;
     font-weight: 500;
-    position: relative; 
+    position: relative;
 }
 
 .tab-link::after {
@@ -238,13 +247,13 @@ color: #fff;
     font-size: 120%;
 }
 
-.tab-contents ul li  {
+.tab-contents ul li {
     font-size: 100%;
     line-height: 1.5;
     margin-top: 5px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
@@ -256,15 +265,16 @@ color: #fff;
 /* ------Services--------------- */
 
 #services {
-padding: 30px;
+    padding: 30px;
 
 }
+
 #services h1 {
     font-size: 400%;
     margin-bottom: 50px;
 }
 
-.services-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -272,7 +282,7 @@ padding: 30px;
 
 }
 
-.services-list div{
+.services-list div {
     background-color: #fff;
     padding: 40px;
     font-size: 20px;
@@ -280,7 +290,7 @@ padding: 30px;
     border-radius: 20px 20px 20px 0;
 }
 
-.services-list div i{
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
@@ -292,11 +302,11 @@ padding: 30px;
 }
 
 .services-list div a {
-text-decoration: none;
-color: black;
-font-size: 12px;
-margin-top: 20px;
-display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .services-list :hover {
@@ -309,30 +319,32 @@ display: inline-block;
 /* ---------Contact/Footer------------ */
 
 #footer {
-    padding:30px;
+    padding: 30px;
     background-color: var(--tabs-head);
 }
 
 .contact-row {
     display: flex;
-    gap: 40px; /* adjust spacing between the two items */
-    flex-wrap: wrap; /* optional: wraps on small screens */
+    gap: 40px;
+    /* adjust spacing between the two items */
+    flex-wrap: wrap;
+    /* optional: wraps on small screens */
 }
 
 .contact-item {
-    position: relative ;
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
     text-decoration: none;
-    cursor: pointer ;
+    cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
 
 .contact-item:hover h2 {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 #contact-item i {
@@ -360,6 +372,9 @@ text-decoration: underline;
 }
 
 /* ------changes cursor to cherub------- */
-button, a, .tab-link, .contact-item {
+button,
+a,
+.tab-link,
+.contact-item {
     cursor: url('images/Subject-3.png') 5 16, auto;
 }
