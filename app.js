@@ -39,4 +39,10 @@ document.querySelectorAll('.contact-item').forEach(item => {
     });
 });
 
+// ----DROPDOWN NAV FOR SOCIALS-----
 
+
+function toggleSocial() {
+    const subMenu = document.getElementById('SubMenu');
+    subMenu.classList.toggle('open-menu');
+}
