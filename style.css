@@ -69,7 +69,7 @@ h3 {
     /* Center-align the text */
 }
 
-
+/* ---------navigation bar---------- */
 nav {
     position: fixed;
     /* Makes the nav bar stay in place while scrolling */
@@ -92,22 +92,22 @@ nav {
     /* Optional: Add some transparency */
 }
 
+/* ------aligns menu items on rightside-------- */
 nav ul {
     display: flex;
     margin-left: auto;
-    /* Aligns the menu items to the right */
     padding: 0;
     list-style: none;
 }
 
+/* --------creates spacing between nav items------- */
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-
-
 }
 
+/* -------styles nav items------- */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -115,6 +115,7 @@ nav ul li a {
     position: relative;
 }
 
+/* -------creates hover line under nav items------ */
 nav ul li a::after {
     content: "";
     width: 0;
@@ -153,6 +154,10 @@ ul li:hover ul.socials {
     display: block;
 }
 
+ul li ul.socials li a i{
+    display: block;
+    
+}
 
 /* --------about section-------- */
 
