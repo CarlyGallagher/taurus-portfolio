@@ -130,6 +130,30 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* --------drop down menu for socials------- */
+
+ul li ul.socials li{
+ display: block;
+}
+
+ul li ul.socials {
+width: 100%;
+background-color: #c9995b;
+position:absolute;
+z-index: 999;
+display: none;
+
+}
+
+ul li a:hover {
+    background: var(--primary-color);
+}
+
+ul li:hover ul.socials {
+    display: block;
+}
+
+
 /* --------about section-------- */
 
 #about {
@@ -222,6 +246,7 @@ color: #fff;
 .tab-contents.active-tab {
     display: block;
 }
+
 
 /* ------Services--------------- */
 
