@@ -13,7 +13,6 @@
     padding: 0;
     font-family: var(--font-family);
     box-sizing: border-box;
-    cursor: url('images/Subject-3.png') 5 16, auto;
 }
 
 body {
@@ -465,12 +464,3 @@ body.dark-mode .sub-menu-link {
     background-color: #010101;
 }
 
-
-
-/* ------changes cursor to cherub------- */
-button,
-a,
-.tab-link,
-.contact-item {
-    cursor: url('images/Subject-3.png') 5 16, auto;
-}
