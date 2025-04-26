@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const textToCopy = link.getAttribute('data-copy');
             navigator.clipboard.writeText(textToCopy).then(() => {
-                // Optional: visual feedback
+                // Change the text to "Copied!"
                 link.querySelector('p').textContent = "Copied!";
                 setTimeout(() => {
                     link.querySelector('p').textContent = textToCopy;
@@ -32,5 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+});
+
+// ---DARK MODE____
+const themeSwitch = document.getElementById('theme-switch');
+
+themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
 });
 
