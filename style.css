@@ -481,11 +481,6 @@ body.dark-mode .sub-menu-link {
 
 /* Responsive Design for Tablets and Smaller Screens */
 @media (max-width: 1024px) {
-    .header-text {
-        padding-top: 20%;
-        padding-right: 20%;
-        font-size: 150%;
-    }
 
     #about {
         height: auto;
@@ -500,15 +495,6 @@ body.dark-mode .sub-menu-link {
     .aboutMe-col-1 img {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 15px 0;
     }
 
     .tab-titles {
