@@ -464,3 +464,98 @@ body.dark-mode .sub-menu-link {
     background-color: #010101;
 }
 
+/* Screen Responsive Media Queries */
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+    .header-text {
+        padding-top: 20%;
+        padding-right: 20%;
+        font-size: 150%;
+    }
+
+    #about {
+        height: auto;
+        margin: 20px;
+    }
+
+    .aboutMe-col-1, .aboutMe-col-2 {
+        flex-basis: 100%;
+    }
+
+    .aboutMe-col-1 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .header-text {
+        padding-top: 30%;
+        padding-right: 0;
+        font-size: 120%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .tab-link {
+        margin: 10px 0;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .services-list div {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .theme-toggle {
+        margin-bottom: 10px;
+    }
+}
