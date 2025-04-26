@@ -70,7 +70,7 @@ h3 {
     /* Center-align the text */
 }
 
-/* ---------navigation bar---------- */
+/* ------------NAVIGATION BAR_____________________ */
 nav {
     width: 100%;
     background-color: #c9995b;
@@ -111,7 +111,7 @@ nav ul li a {
 }
 
 
-/* Socials Drop Down Menu */
+/* -------Socials Drop Down Menu-------- */
 .sub-menu-wrap {
     position: absolute;
     top: 100%;
@@ -151,7 +151,7 @@ nav ul li a {
     margin-right: 15px;
 }
 
-/* Hover Color Affect */
+/* Hover Color Affect For Drop Down Menu */
 
 .sub-menu-link {
     display: flex;
@@ -163,7 +163,6 @@ nav ul li a {
     transition: background-color 0.3s ease;
     width: 100%;
     padding-right: 12px;
-    /* full width for hover effect */
 }
 
 .sub-menu-link:hover {
@@ -221,7 +220,7 @@ nav>ul>li>a:hover::after {
     width: 100%;
 }
 
-/* --------- DROPDOWN CONTACT --------- */
+/* --------- contact Drop Down Menu --------- */
 nav ul li {
     position: relative;
 }
@@ -235,7 +234,7 @@ nav ul li {
 
 
 
-/* --------about section-------- */
+/* --------ABOUT ME SECTION_______________________*/
 
 #about {
     height: 100vh;
@@ -329,7 +328,7 @@ nav ul li {
 }
 
 
-/* ------Services--------------- */
+/* ------------SERVICES SECTION_____________________ */
 
 #services {
     padding: 30px;
@@ -383,7 +382,8 @@ nav ul li {
     transition: all 0.3s ease;
 }
 
-/* ---------DARK MODE--------- */
+/* ---------DARK MODE___________________________ */
+
 /* Dark/Light Toggle */
 .theme-toggle {
     display: flex;
@@ -421,7 +421,6 @@ nav ul li {
 
 /* ---Styling For Dark Mode--- */
 
-/* Default (light) theme is already set with your colors */
 /* DARK MODE */
 body.dark-mode {
     background-color: #040303;
@@ -473,7 +472,7 @@ body.dark-mode .sub-menu-link {
     background-color: #010101;
 }
 
-/* Screen Responsive Media Queries */
+/* ----------SCREEN RESPONSIVE DESIGN________________ */
 
 /* Responsive Design for Tablets and Smaller Screens */
 @media (max-width: 1024px) {
