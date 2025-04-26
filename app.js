@@ -40,3 +40,13 @@ const themeSwitch = document.getElementById('theme-switch');
 themeSwitch.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
 });
+
+
+// media querie hamburger menu
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});

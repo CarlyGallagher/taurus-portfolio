@@ -104,6 +104,13 @@ nav ul li a {
     display: inline-block;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
 /* Socials Drop Down Menu */
 .sub-menu-wrap {
     position: absolute;
@@ -386,7 +393,8 @@ nav ul li {
 }
 
 #theme-switch {
-    display: none; /* hide the checkbox itself */
+    display: none;
+    /* hide the checkbox itself */
 }
 
 .toggle-label {
@@ -402,11 +410,11 @@ nav ul li {
 }
 
 /* Only show sun OR moon depending on mode */
-#theme-switch:not(:checked) ~ .toggle-label .fa-sun {
+#theme-switch:not(:checked)~.toggle-label .fa-sun {
     display: none;
 }
 
-#theme-switch:checked ~ .toggle-label .fa-moon {
+#theme-switch:checked~.toggle-label .fa-moon {
     display: none;
 }
 
@@ -432,7 +440,7 @@ body.dark-mode #services h1 {
     background-color: #080505;
     color: #eeecec;
     text-shadow: none;
-} 
+}
 
 /* ---Sub Menu Dark Mode Hover---- */
 .dark-mode .sub-menu-link:hover {
@@ -443,20 +451,21 @@ body.dark-mode #services h1 {
     color: #eee;
 }
 
-body.dark-mode ul li span{
-   color: var(--dark-mode-text);
+body.dark-mode ul li span {
+    color: var(--dark-mode-text);
     text-shadow: none;
 }
 
 body.dark-mode .services-list div {
-    background-color: var(--tabs-head); /* or even darker if you want */
+    background-color: var(--tabs-head);
+    /* or even darker if you want */
     color: var(--dark-mode-text);
 }
 
 .dark-mode .services-list :hover {
     color: black;
     background-color: var(--dark-mode-text);
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
 }
 
 body.dark-mode .sub-menu,
@@ -479,7 +488,8 @@ body.dark-mode .sub-menu-link {
         margin: 20px;
     }
 
-    .aboutMe-col-1, .aboutMe-col-2 {
+    .aboutMe-col-1,
+    .aboutMe-col-2 {
         flex-basis: 100%;
     }
 
@@ -526,11 +536,6 @@ body.dark-mode .sub-menu-link {
 
     nav {
         flex-direction: column;
-    }
-
-    nav ul {
-        text-align: center;
-        padding: 10px 0;
     }
 
     nav ul li {
