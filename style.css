@@ -543,7 +543,7 @@ body.dark-mode .sub-menu-link {
         position: absolute;
         top: 100%;
         /* right under the nav */
-        right: 0;
+        right: 10px;
         background: var(--primary-color);
         padding: 1rem;
         border-radius: 0.5rem;
@@ -553,11 +553,14 @@ body.dark-mode .sub-menu-link {
         pointer-events: none;
         transition: opacity 0.3s ease, transform 0.3s ease;
         /* or auto, your choice */
+        width:180px;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         gap: 1rem;
 
     }
+
 
     nav ul.active {
         opacity: 1;
