@@ -48,5 +48,23 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+    navLinks.classList.toggle('active');
+});
+
+// Dropdown toggles
+const contactToggle = document.getElementById('contact-toggle');
+const socialsToggle = document.getElementById('socials-toggle');
+const contactMenu = document.querySelector('.contact .sub-menu-wrap');
+const socialsMenu = document.querySelector('.socials .sub-menu-wrap');
+
+contactToggle.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the link from jumping
+    contactMenu.classList.toggle('active');
+    socialsMenu.classList.remove('active'); // Close socials if open
+});
+
+socialsToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    socialsMenu.classList.toggle('active');
+    contactMenu.classList.remove('active'); // Close contact if open
 });
