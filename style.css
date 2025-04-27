@@ -199,7 +199,7 @@ nav ul li a {
 
 .sub-menu-link:hover::after {
     width: 100%;
-} 
+}
 
 
 
@@ -509,6 +509,11 @@ body.dark-mode .sub-menu-link {
 
 /* Mobile Phones */
 @media (max-width: 600px) {
+
+
+
+
+
     .header-text {
         display: none;
     }
@@ -521,7 +526,7 @@ body.dark-mode .sub-menu-link {
         font-size: 20px;
     }
 
-/* -----Navigation Bar----- */
+    /* -----Navigation Bar----- */
 
     nav {
         flex-direction: row;
@@ -550,10 +555,8 @@ body.dark-mode .sub-menu-link {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0;
         transform: translateY(-10px);
-        pointer-events: none;
         transition: opacity 0.3s ease, transform 0.3s ease;
-        /* or auto, your choice */
-        width:180px;
+        width: 180px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -561,95 +564,83 @@ body.dark-mode .sub-menu-link {
 
     }
 
+    .sub-menu-link:hover p {
+        display: unset;
+    }
 
+    /* activates hamburger */
     nav ul.active {
         opacity: 1;
         pointer-events: auto;
     }
 
-    nav ul li {
-        opacity: 0;
-        transform: translateY(-10px) scale(0.95);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        transition-delay: 0s;
-    }
     .sub-menu-wrap {
-        display: none; /* hide it by default */
-    }
-    
-    .sub-menu-wrap.active {
-        display: block; /* show it when active */
-    }
-    
-    .contact:hover .sub-menu-wrap,
-    .socials:hover .sub-menu-wrap {
-        max-height: 0; /* Prevent dropdown menus from opening on hover */
+        display: none;
+        max-height: 0;
+        overflow: hidden;
         padding: 0;
+        transition: max-height 0.3s ease, padding 0.3s ease;
     }
 
-    /* When nav is active */
-    nav ul.active li {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
 
-    /* Staggered effect */
-    nav ul.active li:nth-child(1) {
-        transition-delay: 0.05s;
-    }
-
-    nav ul.active li:nth-child(2) {
-        transition-delay: 0.10s;
-    }
-
-    nav ul.active li:nth-child(3) {
-        transition-delay: 0.15s;
-    }
-
-    nav ul.active li:nth-child(4) {
-        transition-delay: 0.20s;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-        padding: 10px;
-        color: white;
-    }
-
-    /* Move hamburger to the right */
-    .hamburger {
+    .sub-menu-wrap.active {
         display: block;
-        font-size: 28px;
-        margin-right: 10px;
-        color: white;
+        max-height: 500px;
+        padding: 10px 0;
+       
     }
+ 
 
-    /* ----About Tabs Section----- */
+}
 
-    .tab-titles {
-        flex-direction: column;
-        margin: 10px 0;
-    }
+*/
 
-    .tab-link {
-        margin: 10px 0;
-    }
+/* When nav is active */
+nav ul.active li {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
 
 
-    /* ------Services Section-----  */
-    .services-list {
-        grid-template-columns: 1fr;
-    }
+nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+}
 
-    .services-list div {
-        padding: 20px;
-        font-size: 16px;
-    }
+/* Move hamburger to the right */
+.hamburger {
+    display: block;
+    font-size: 28px;
+    margin-right: 10px;
+    color: white;
+}
 
-    /* Center the theme toggle */
-    .theme-toggle {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+/* ----About Tabs Section----- */
+
+.tab-titles {
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.tab-link {
+    margin: 10px 0;
+}
+
+
+/* ------Services Section-----  */
+.services-list {
+    grid-template-columns: 1fr;
+}
+
+.services-list div {
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Center the theme toggle */
+.theme-toggle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }

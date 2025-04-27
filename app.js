@@ -42,8 +42,8 @@ themeSwitch.addEventListener('change', () => {
 });
 
 
-// media querie hamburger menu
 
+// Handle hamburger menu toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
@@ -51,20 +51,27 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Dropdown toggles
+// Handle contact/socials toggle
+// Get elements
 const contactToggle = document.getElementById('contact-toggle');
 const socialsToggle = document.getElementById('socials-toggle');
-const contactMenu = document.querySelector('.contact .sub-menu-wrap');
-const socialsMenu = document.querySelector('.socials .sub-menu-wrap');
+const contactSubMenu = document.querySelector('.contact .sub-menu-wrap');
+const socialsSubMenu = document.querySelector('.socials .sub-menu-wrap');
 
-contactToggle.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent the link from jumping
-    contactMenu.classList.toggle('active');
-    socialsMenu.classList.remove('active'); // Close socials if open
+// Add click event for Contact
+contactToggle.addEventListener('click', function (e) {
+    e.preventDefault(); // prevent jumping
+    // Close socials if open
+    socialsSubMenu.classList.remove('active');
+    // Toggle contact
+    contactSubMenu.classList.toggle('active');
 });
 
-socialsToggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    socialsMenu.classList.toggle('active');
-    contactMenu.classList.remove('active'); // Close contact if open
+// Add click event for Socials
+socialsToggle.addEventListener('click', function (e) {
+    e.preventDefault(); // prevent jumping
+    // Close contact if open
+    contactSubMenu.classList.remove('active');
+    // Toggle socials
+    socialsSubMenu.classList.toggle('active');
 });
