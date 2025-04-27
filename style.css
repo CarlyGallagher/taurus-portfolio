@@ -572,7 +572,7 @@ body.dark-mode .sub-menu-link {
     margin-right: 10px;
     color: white;
   }
-/* keep an eye on this */
+  /* keep an eye on this */
   nav ul.active li {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -582,6 +582,35 @@ body.dark-mode .sub-menu-link {
     font-size: 18px;
     padding: 10px;
     color: white;
+  }
+
+  /* Disable hover underline on nav links */
+  nav > ul > li > a:hover::after {
+    width: 0;
+  }
+
+  /* Disable hover background on submenu links */
+  .sub-menu-link:hover {
+    background-color: transparent;
+  }
+
+  /* Disable hover text color change */
+  .sub-menu-link:hover p {
+    color: inherit;
+  }
+
+  /* Disable services section hover effect */
+  .services-list div:hover {
+    background-color: #fff;
+    color: black;
+    transform: none;
+  }
+
+  /* Disable dark mode hover too */
+  .dark-mode .services-list div:hover {
+    background-color: var(--tabs-head);
+    color: var(--dark-mode-text);
+    transform: none;
   }
 
   /* ----About Tabs Section----- */
