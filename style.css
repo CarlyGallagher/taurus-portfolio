@@ -626,6 +626,12 @@ body.dark-mode .sub-menu-link {
 
   /* ----About Tabs Section________________ */
 
+  #about {
+    padding: 10px;
+  }
+
+  
+
   .tab-titles {
     flex-direction: column;
     margin: 10px 0;
