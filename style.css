@@ -581,47 +581,6 @@ body.dark-mode .sub-menu-link {
     border-bottom: 1px solid white; /* light white line */
   }
 
-  nav ul li a:focus,
-  nav ul li a:active {
-    color: white; /* Keep text color white on focus/active */
-    text-decoration: none; /* Remove default underline */
-    border-bottom: 1px solid white; /* Keep underline white */
-    outline: none; /* Remove default focus outline */
-  }
-
-  /* Ensure submenu links remain white */
-  .sub-menu-link {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove default underline */
-  }
-
-  .sub-menu-link:focus,
-  .sub-menu-link:active {
-    color: white; /* Keep text color white on focus/active */
-    text-decoration: none; /* Remove default underline */
-    outline: none; /* Remove default focus outline */
-  }
-
-  /* Ensure borders remain white */
-  .nav-links a {
-    border-bottom: 1px solid white; /* Ensure border is white */
-  }
-
-  .nav-links a:focus,
-  .nav-links a:active {
-    border-bottom: 1px solid white; /* Keep border white on focus/active */
-    outline: none; /* Remove default focus outline */
-  }
-
-  .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid white; /* light white line */
-  }
-
   .nav-links a:last-child {
     border-bottom: none; /* remove the line after the last item */
   }
