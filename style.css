@@ -462,7 +462,7 @@ body.dark-mode .sub-menu-link {
   background-color: #010101;
 }
 
-/* ----------SCREEN RESPONSIVE DESIGN________________ */
+/* ----------TABLETS________________ */
 
 /* Responsive Design for Tablets and Smaller Screens */
 @media (max-width: 1024px) {
@@ -491,7 +491,7 @@ body.dark-mode .sub-menu-link {
   }
 }
 
-/* Mobile Phones */
+/* -------------MOBILE PHONES_________________ */
 @media (max-width: 600px) {
   .header-text {
     display: none;
@@ -526,24 +526,20 @@ body.dark-mode .sub-menu-link {
   nav ul {
     position: absolute;
     top: 100%;
-    /* right under the nav */
-    right: 10px;
+    right: 5px;
     background: var(--primary-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    width: 180px;
+    width: 100%;
+    border-top: #eee 1px solid;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: flex-end;
   }
-
-  .sub-menu-link:hover p {
-    display: unset;
+  nav ul li {
+    width: 100%;
+    text-align: right;
+    padding: 1%;
+    border-bottom: #eee 1px solid;
   }
 
   /* activates hamburger */
@@ -557,7 +553,6 @@ body.dark-mode .sub-menu-link {
     max-height: 0;
     overflow: hidden;
     padding: 0;
-    transition: max-height 0.3s ease, padding 0.3s ease;
   }
 
   .sub-menu-wrap.active {
@@ -572,10 +567,10 @@ body.dark-mode .sub-menu-link {
     margin-right: 10px;
     color: white;
   }
+
   /* keep an eye on this */
   nav ul.active li {
     opacity: 1;
-    transform: translateY(0) scale(1);
   }
 
   nav ul li a {
@@ -584,9 +579,27 @@ body.dark-mode .sub-menu-link {
     color: white;
   }
 
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white; /* light white line */
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none; /* remove the line after the last item */
+  }
+
+  /* ---------DISABLE HOVERS ON PHONES----------- */
   /* Disable hover underline on nav links */
   nav > ul > li > a:hover::after {
     width: 0;
+  }
+
+  .sub-menu-link:hover p {
+    display: unset;
   }
 
   /* Disable hover background on submenu links */
@@ -613,7 +626,7 @@ body.dark-mode .sub-menu-link {
     transform: none;
   }
 
-  /* ----About Tabs Section----- */
+  /* ----About Tabs Section________________ */
 
   .tab-titles {
     flex-direction: column;
