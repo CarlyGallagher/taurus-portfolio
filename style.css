@@ -585,6 +585,11 @@ body.dark-mode .sub-menu-link {
     border-bottom: none; /* remove the line after the last item */
   }
 
+  .dark-mode nav ul {
+    background: #000000;
+  }
+
+
   /* ---------DISABLE HOVERS ON PHONES----------- */
   /* Disable hover underline on nav links */
   nav > ul > li > a:hover::after {
