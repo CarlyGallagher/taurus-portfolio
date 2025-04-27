@@ -111,7 +111,8 @@ nav ul li a {
 .hamburger {
   display: none;
   font-size: 28px;
-  cursor: pointer;
+  margin-right: 10px;
+  color: white;
 }
 
 /* -------Socials Drop Down Menu-------- */
@@ -564,54 +565,50 @@ body.dark-mode .sub-menu-link {
     max-height: 500px;
     padding: 10px 0;
   }
-}
 
-*/
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    margin-right: 10px;
+    color: white;
+  }
+/* keep an eye on this */
+  nav ul.active li {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 
-/* When nav is active */
-nav ul.active li {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+  }
 
-nav ul li a {
-  font-size: 18px;
-  padding: 10px;
-  color: white;
-}
+  /* ----About Tabs Section----- */
 
-/* Move hamburger to the right */
-.hamburger {
-  display: block;
-  font-size: 28px;
-  margin-right: 10px;
-  color: white;
-}
+  .tab-titles {
+    flex-direction: column;
+    margin: 10px 0;
+  }
 
-/* ----About Tabs Section----- */
+  .tab-link {
+    margin: 10px 0;
+  }
 
-.tab-titles {
-  flex-direction: column;
-  margin: 10px 0;
-}
+  /* ------Services Section-----  */
+  .services-list {
+    grid-template-columns: 1fr;
+  }
 
-.tab-link {
-  margin: 10px 0;
-}
+  .services-list div {
+    padding: 20px;
+    font-size: 16px;
+  }
 
-/* ------Services Section-----  */
-.services-list {
-  grid-template-columns: 1fr;
-}
-
-.services-list div {
-  padding: 20px;
-  font-size: 16px;
-}
-
-/* Center the theme toggle */
-.theme-toggle {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  /* Center the theme toggle */
+  .theme-toggle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
