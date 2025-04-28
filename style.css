@@ -385,11 +385,61 @@ nav ul li {
   display: inline-block;
 }
 
-.services-list :hover {
+.services-list div:hover {
   color: #e7e7e7;
   background-color: black;
   transform: translateY(-10px);
   transition: all 0.3s ease;
+}
+
+/* --------FOOTER_________________ */
+footer {
+  background-color: var(--tabs-head);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 15px;
+  text-align: center;
+  border-top: #eee 1px solid;
+}
+
+footer button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+footer button a {
+  color: white;
+  text-decoration: none;
+}
+
+footer button {
+  position: relative;
+  display: inline-block;
+}
+
+footer button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+footer button:hover::after {
+  width: 100%;
+}
+
+footer button:hover {
+  color: #fff;
+  /* Ensure hover state is also white */
 }
 
 /* ---------DARK MODE___________________________ */
@@ -428,9 +478,8 @@ nav ul li {
   display: none;
 }
 
-/* ---Styling For Dark Mode--- */
 
-/* DARK MODE */
+/* -----Dark Mode Styles---- */
 body.dark-mode {
   background-color: #040303;
   color: #ffffff;
@@ -479,6 +528,11 @@ body.dark-mode .services-list div {
 body.dark-mode .sub-menu,
 body.dark-mode .sub-menu-link {
   background-color: #010101;
+}
+
+footer {
+  background-color: transparent;
+  color: #fff;
 }
 
 /* ----------TABLETS________________ */
@@ -614,6 +668,10 @@ body.dark-mode .sub-menu-link {
   /* ---------DISABLE HOVERS ON PHONES----------- */
   /* Disable hover underline on nav links */
   nav>ul>li>a:hover::after {
+    width: 0;
+  }
+
+  footer button:hover::after {
     width: 0;
   }
 
