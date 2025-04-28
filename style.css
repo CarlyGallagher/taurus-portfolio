@@ -199,12 +199,12 @@ nav ul li a {
 }
 
 /* Hover underline effect */
-nav > ul > li > a {
+nav>ul>li>a {
   position: relative;
   display: inline-block;
 }
 
-nav > ul > li > a::after {
+nav>ul>li>a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -215,7 +215,7 @@ nav > ul > li > a::after {
   transition: 0.5s;
 }
 
-nav > ul > li > a:hover::after {
+nav>ul>li>a:hover::after {
   width: 100%;
 }
 
@@ -251,10 +251,14 @@ nav ul li {
 }
 
 .aboutMe-col-1 img {
-  width: 100%; /* Ensure the image takes up the full width of its container */
-  height: auto; /* Maintain the aspect ratio */
-  padding: 0; /* Remove any padding */
-  margin: 0; /* Remove any margin */
+  width: 100%;
+  /* Ensure the image takes up the full width of its container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  padding: 0;
+  /* Remove any padding */
+  margin: 0;
+  /* Remove any margin */
 }
 
 .aboutMe-col-2 {
@@ -281,13 +285,13 @@ nav ul li {
 }
 
 .tab-titles button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .tab-link {
@@ -416,11 +420,11 @@ nav ul li {
 }
 
 /* Only show sun OR moon depending on mode */
-#theme-switch:not(:checked) ~ .toggle-label .fa-sun {
+#theme-switch:not(:checked)~.toggle-label .fa-sun {
   display: none;
 }
 
-#theme-switch:checked ~ .toggle-label .fa-moon {
+#theme-switch:checked~.toggle-label .fa-moon {
   display: none;
 }
 
@@ -550,6 +554,7 @@ body.dark-mode .sub-menu-link {
     flex-direction: column;
     align-items: flex-end;
   }
+
   nav ul li {
     width: 100%;
     text-align: right;
@@ -593,11 +598,13 @@ body.dark-mode .sub-menu-link {
     padding: 10px;
     color: white;
     text-decoration: none;
-    border-bottom: 1px solid white; /* light white line */
+    border-bottom: 1px solid white;
+    /* light white line */
   }
 
   .nav-links a:last-child {
-    border-bottom: none; /* remove the line after the last item */
+    border-bottom: none;
+    /* remove the line after the last item */
   }
 
   .dark-mode nav ul {
@@ -606,7 +613,7 @@ body.dark-mode .sub-menu-link {
 
   /* ---------DISABLE HOVERS ON PHONES----------- */
   /* Disable hover underline on nav links */
-  nav > ul > li > a:hover::after {
+  nav>ul>li>a:hover::after {
     width: 0;
   }
 
@@ -625,18 +632,20 @@ body.dark-mode .sub-menu-link {
   }
 
   /* Disable services section hover effect */
-  .services-list div:hover {
+  .services-list :hover {
     background-color: #fff;
     color: black;
     transform: none;
+    transition: none;
   }
 
   /* Disable dark mode hover too */
-  .dark-mode .services-list div:hover {
+  .dark-mode .services-list :hover {
     background-color: var(--tabs-head);
     color: var(--dark-mode-text);
     transform: none;
   }
+
 
   /* ----About Tabs Section________________ */
 
