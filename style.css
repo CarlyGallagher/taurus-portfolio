@@ -511,7 +511,7 @@ body.dark-mode .sub-menu-link {
 }
 
 /* -------------MOBILE PHONES_________________ */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header-text {
     display: none;
   }
