@@ -519,7 +519,7 @@ body.dark-mode .services-list div {
   color: var(--dark-mode-text);
 }
 
-.dark-mode .services-list :hover {
+.dark-mode .services-list div:hover {
   color: black;
   background-color: var(--dark-mode-text);
   transform: translateY(-10px);
@@ -690,7 +690,7 @@ footer {
   }
 
   /* Disable services section hover effect */
-  .services-list :hover {
+  .services-list div:hover {
     background-color: #fff;
     color: black;
     transform: none;
@@ -698,7 +698,7 @@ footer {
   }
 
   /* Disable dark mode hover too */
-  .dark-mode .services-list :hover {
+  .dark-mode .services-list div:hover {
     background-color: var(--tabs-head);
     color: var(--dark-mode-text);
     transform: none;
