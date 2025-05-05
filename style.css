@@ -719,7 +719,7 @@ footer {
   .aboutMe-col-1 {
     flex-basis: auto;
     width: 50%;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
   }
 
