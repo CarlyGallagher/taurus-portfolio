@@ -575,10 +575,6 @@ footer {
     display: none;
   }
 
-  :root {
-    --vh: 100vh;
-  }
-
   h1 {
     font-size: 32px;
   }
@@ -718,7 +714,6 @@ footer {
 
   #about {
     padding: 10px;
-    height: calc(var(--vh));
   }
 
   .tab-titles {
