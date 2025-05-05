@@ -253,16 +253,16 @@ nav ul li {
 }
 
 .aboutMe-col-1 img {
-  width: 90%;
+  width: 80%;
   /* Ensure the image takes up the full width of its container */
-  height: 90%;
+  height: 80%;
   /* Maintain the aspect ratio */
   padding: 0;
   /* Remove any padding */
   margin: 0;
   /* Remove any margin */
   object-fit: cover;
-  
+
   display: block;
 }
 
