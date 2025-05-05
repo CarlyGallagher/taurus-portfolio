@@ -75,3 +75,19 @@ socialsToggle.addEventListener('click', function (e) {
     // Toggle socials
     socialsSubMenu.classList.toggle('active');
 });
+
+
+if (window.location.hash === "#header") {
+    history.replaceState(null, null, " ");
+}
+
+
+// Fix iOS 100vh issue
+function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh * 100}px`);
+  }
+  
+  setVH();
+  window.addEventListener('resize', setVH);
+  
