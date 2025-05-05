@@ -716,13 +716,6 @@ footer {
     padding: 10px;
   }
 
-  .aboutMe-col-1 {
-    flex-basis: auto;
-    width: 50%;
-    height: auto;
-    overflow: hidden;
-  }
-
   .tab-titles {
     flex-direction: column;
     margin: 10px 0;
