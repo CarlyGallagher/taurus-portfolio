@@ -30,7 +30,7 @@ h3 {
   font-family: abril fatface;
 }
 
-.header {
+#header {
   width: 100%;
   height: 50vh;
   background-image: url(images/sistine.jpg);
@@ -570,13 +570,9 @@ footer {
 }
 
 /* -------------MOBILE PHONES_________________ */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .header-text {
     display: none;
-  }
-
-  :root {
-    --vh: 100vh;
   }
 
   h1 {
@@ -586,8 +582,6 @@ footer {
   h3 {
     font-size: 20px;
   }
-
-
 
   /* -----Navigation Bar----- */
 
@@ -719,7 +713,7 @@ footer {
   /* ----About Tabs Section________________ */
 
   #about {
-    height: calc(var(--vh));
+    padding: 0;
   }
 
   .tab-titles {
