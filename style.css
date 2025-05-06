@@ -233,7 +233,7 @@ nav ul li {
 /* --------ABOUT ME SECTION_______________________*/
 
 #about {
-  min-height: 100%;
+  height: 100vh;
   background-color: #c9995b;
   padding: 10px 0;
   margin: 10px;
@@ -246,7 +246,9 @@ nav ul li {
 }
 
 .aboutMe-col-1 {
-  flex: 1;
+  flex: auto;
+  width: 50%;
+  height: 100vh;
 }
 
 .aboutMe-col-1 img {
@@ -259,7 +261,6 @@ nav ul li {
   margin: 0;
   /* Remove any margin */
   object-fit: cover;
-
 }
 
 .aboutMe-col-2 {
