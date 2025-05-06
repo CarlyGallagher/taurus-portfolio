@@ -246,9 +246,10 @@ nav ul li {
 }
 
 .aboutMe-col-1 {
-  flex: auto;
+  flex-basis: auto;
   width: 50%;
-  height: 100vh;
+  height: 80vh;
+  overflow: hidden;
 }
 
 .aboutMe-col-1 img {
