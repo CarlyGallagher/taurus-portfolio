@@ -75,3 +75,13 @@ socialsToggle.addEventListener('click', function (e) {
     // Toggle socials
     socialsSubMenu.classList.toggle('active');
 });
+
+
+function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh * 100}px`);
+  }
+  
+  setViewportHeight();
+  window.addEventListener('resize', setViewportHeight);
+  
