@@ -63,9 +63,8 @@ h3 {
   padding: 5px;
   /* Add padding around the text */
   text-shadow: 3px 3px 0 #c9995b;
-  /* Optional: Add text shadow */
+
   border-radius: 5px;
-  /* Optional: Add rounded corners */
   text-align: center;
   /* Center-align the text */
 }
