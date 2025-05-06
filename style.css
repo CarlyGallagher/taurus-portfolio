@@ -233,7 +233,7 @@ nav ul li {
 /* --------ABOUT ME SECTION_______________________*/
 
 #about {
-  height: 100vh;
+  min-height: 100%;
   background-color: #c9995b;
   padding: 10px 0;
   margin: 10px;
@@ -246,16 +246,13 @@ nav ul li {
 }
 
 .aboutMe-col-1 {
-  flex-basis: auto;
-  width: 50%;
-  height: var(--vh, 100vh);
-  overflow: hidden;
+  flex: 1;
 }
 
 .aboutMe-col-1 img {
-  width: 80%;
+  width: 100%;
   /* Ensure the image takes up the full width of its container */
-  height: 80%;
+  height: 100%;
   /* Maintain the aspect ratio */
   padding: 0;
   /* Remove any padding */
@@ -263,7 +260,6 @@ nav ul li {
   /* Remove any margin */
   object-fit: cover;
 
-  display: block;
 }
 
 .aboutMe-col-2 {
