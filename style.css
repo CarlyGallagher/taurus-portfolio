@@ -242,12 +242,14 @@ nav ul li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
+
 .aboutMe-col-1 {
-  flex-basis: auto;
+  flex: auto;
   width: 50%;
-  height: 80vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -256,9 +258,9 @@ nav ul li {
   /* Ensure the image takes up the full width of its container */
   height: 100%;
   /* Maintain the aspect ratio */
-  padding: 0;
+  padding: 1%;
   /* Remove any padding */
-  margin: 0;
+  margin: 2%;
   /* Remove any margin */
   object-fit: cover;
 }
@@ -704,27 +706,6 @@ footer {
     background-color: var(--tabs-head);
     color: var(--dark-mode-text);
     transform: none;
-  }
-
-  /*----------img sizing on phone------------ */
-
-  .aboutMe-col-1 {
-    flex-basis: auto;
-    height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .aboutMe-col-1 img {
-    width: 100%;
-    /* Ensure the image takes up the full width of its container */
-    height: 100%;
-    /* Maintain the aspect ratio */
-    padding: 0;
-    /* Remove any padding */
-    margin: 0;
-    /* Remove any margin */
-    object-fit: cover;
   }
 
   /* ----About Tabs Section________________ */
