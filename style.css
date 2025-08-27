@@ -279,7 +279,7 @@ nav ul li {
   margin-top: 20px;
 }
 
-/* -------------tabs---------------- */
+/* -------------TABS---------------- */
 
 .tab-titles {
   display: flex;
@@ -328,13 +328,28 @@ nav ul li {
 .tab-contents ul li span {
   color: var(--tabs-head);
   font-size: 120%;
+  cursor: default;
 }
 
 .tab-contents ul li {
   font-size: 100%;
   line-height: 1.5;
   margin-top: 5px;
+  text-decoration: none;
 }
+
+/* -----experience---- */
+.tab-contents img {
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.tab-contents img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 
 .tab-contents {
   display: none;
@@ -483,6 +498,7 @@ footer button:hover {
 }
 
 
+
 /* -----Dark Mode Styles---- */
 body.dark-mode {
   background-color: #040303;
@@ -519,8 +535,12 @@ body.dark-mode ul li span {
 
 body.dark-mode .services-list div {
   background-color: var(--tabs-head);
-  /* or even darker if you want */
   color: var(--dark-mode-text);
+}
+
+
+body.dark-mode .tab-contents a img {
+  border: 3px solid tan;
 }
 
 .dark-mode .services-list div:hover {
@@ -565,6 +585,10 @@ footer {
 
   .services-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .tab-contents img {
+    width: 60%;
   }
 }
 
@@ -669,6 +693,17 @@ footer {
     background: #000000;
   }
 
+  .tab-contents img {
+    display: flex;
+    /* flex container */
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center (if you want) */
+    flex-direction: column;
+    /* stack text and image */
+  }
+
   /* ---------DISABLE HOVERS ON PHONES----------- */
   /* Disable hover underline on nav links */
   nav>ul>li>a:hover::after {
@@ -721,6 +756,14 @@ footer {
 
   .tab-link {
     margin: 10px 0;
+  }
+
+  .tab-contents img {
+    width: 70%;
+  }
+
+  .tab-contents img {
+    width: 100%;
   }
 
   /* ------Services Section-----  */
