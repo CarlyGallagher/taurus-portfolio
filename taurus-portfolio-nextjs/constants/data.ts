@@ -120,6 +120,10 @@ export const skills: Skill[] = [
     name: 'Insomnia',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg',
   },
+  {
+    name: 'Resend',
+    icon: 'https://cdn.simpleicons.org/resend/000000',
+  },
 ];
 
 // Experience data for the About section tabs

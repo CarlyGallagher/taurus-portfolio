@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: 'onboarding@resend.dev', // You'll need to update this with your verified domain
       to: 'carlygallagher22@gmail.com',
       replyTo: email, // This allows you to reply directly to the sender
@@ -52,14 +52,17 @@ export async function POST(request: NextRequest) {
       `,
     });
 
+    console.log('Resend API response:', result);
+
     return NextResponse.json(
       { success: true, message: 'Message sent successfully' },
       { status: 200 }
     );
   } catch (error) {
     console.error('Contact form error:', error);
+    console.error('Error details:', JSON.stringify(error, null, 2));
     return NextResponse.json(
-      { error: 'Failed to send message. Please try again.' },
+      { error: 'Failed to send message. Please try again.', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     );
   }
