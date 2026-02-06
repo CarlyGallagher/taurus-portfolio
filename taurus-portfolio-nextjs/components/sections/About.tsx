@@ -13,21 +13,15 @@ export default function About() {
 
   return (
     <section id="about" className="py-16 px-6 bg-[#040303]" aria-labelledby="about-heading">
-      <div className="container mx-auto">
-        <div className="row flex flex-col lg:flex-row gap-12 items-start">
+      <div className="container mx-auto max-w-4xl">
+        <h1 id="about-heading" className="text-4xl md:text-5xl text-white mb-6">What Am I About?</h1>
+        <p className="text-white text-base md:text-lg leading-relaxed whitespace-pre-line mb-8">
+          {typedText}
+          <span className="animate-pulse">|</span>
+        </p>
 
-          {/* About Text Column */}
-          <div className="aboutMe-col-2 w-full lg:w-1/2">
-            <h1 id="about-heading" className="text-4xl md:text-5xl text-white mb-6">What Am I About?</h1>
-            <p className="text-white text-base md:text-lg leading-relaxed whitespace-pre-line mb-8">
-              {typedText}
-              <span className="animate-pulse">|</span>
-            </p>
-
-            {/* Tab System for Skills/Experience/Education */}
-            <TabSystem />
-          </div>
-        </div>
+        {/* Tab System for Skills/Experience/Education */}
+        <TabSystem />
       </div>
     </section>
   );
