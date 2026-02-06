@@ -1,6 +1,6 @@
 import Header from '@/components/layout/Header';
 import About from '@/components/sections/About';
-import Services from '@/components/sections/Services';
+import Projects from '@/components/sections/Projects';
 import Footer from '@/components/layout/Footer';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <main id="main-content" className="min-h-screen">
         <About />
-        <Services />
+        <Projects />
       </main>
       <Footer />
     </>

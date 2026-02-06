@@ -2,16 +2,14 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { skills, experience, education, projects } from '@/constants/data';
+import { skills, education } from '@/constants/data';
 
-type TabType = 'skills' | 'experience' | 'education' | 'projects';
+type TabType = 'skills' | 'education';
 
 export default function TabSystem() {
-  const [activeTab, setActiveTab] = useState<TabType>('projects');
+  const [activeTab, setActiveTab] = useState<TabType>('skills');
 
   const tabs: { id: TabType; label: string }[] = [
-    { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'education', label: 'Education' },
   ];
@@ -73,40 +71,6 @@ export default function TabSystem() {
         </div>
       )}
 
-      {/* Tab Content - Experience */}
-      {activeTab === 'experience' && (
-        <div
-          className="tab-contents"
-          role="tabpanel"
-          id="experience-panel"
-          aria-labelledby="experience-tab"
-        >
-          <ul className="space-y-6">
-            {experience.map((exp, index) => (
-              <li key={index}>
-                <span className="company-name text-bronze-300 font-semibold text-lg block mb-3">
-                  {exp.company}
-                </span>
-                <a
-                  href={exp.url}
-                  className="experience block hover:scale-105 transition-transform duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={exp.image}
-                    alt={exp.alt}
-                    width={800}
-                    height={400}
-                    className="w-full md:w-3/5 rounded-lg shadow-lg"
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
       {/* Tab Content - Education */}
       {activeTab === 'education' && (
         <div
@@ -123,40 +87,6 @@ export default function TabSystem() {
                 </span>
                 <br />
                 {edu.degree}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {/* Tab Content - Projects */}
-      {activeTab === 'projects' && (
-        <div
-          className="tab-contents"
-          role="tabpanel"
-          id="projects-panel"
-          aria-labelledby="projects-tab"
-        >
-          <ul className="space-y-6">
-            {projects.map((project, index) => (
-              <li key={index}>
-                <span className="text-bronze-300 font-semibold text-lg block mb-3">
-                  {project.name}
-                </span>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group"
-                >
-                  <Image
-                    src={project.image}
-                    alt={project.alt}
-                    width={800}
-                    height={400}
-                    className="w-full md:w-3/5 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-                  />
-                </a>
               </li>
             ))}
           </ul>
