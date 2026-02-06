@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+/* Enable dark mode variant */
+@variant dark (.dark &);
+
+/* Root CSS variables */
+:root {
+  --primary-color: #c9995b;
+  --shadow-dark: #9a5803;
+  --tabs-head: #804a03;
+  --dark-mode-shadow: #af621f;
+  --dark-mode-text: #d8af85;
+}
+
+/* Tailwind v4 theme configuration */
+@theme inline {
+  /* Bronze color palette for light mode */
+  --color-bronze-50: #fdf8f3;
+  --color-bronze-100: #f5e6d3;
+  --color-bronze-200: #e7d4b8;
+  --color-bronze-300: #d8af85;
+  --color-bronze-400: #c9995b;
+  --color-bronze-500: #b8853d;
+  --color-bronze-600: #a5722b;
+  --color-bronze-700: #9a5803;
+  --color-bronze-800: #804a03;
+  --color-bronze-900: #5f3702;
+
+  /* Dark mode colors */
+  --color-dark-bg: #040303;
+  --color-dark-bg-alt: #000000;
+  --color-dark-bg-secondary: #080505;
+  --color-dark-text: #eeecec;
+  --color-dark-text-alt: #ffffff;
+
+  /* Custom responsive breakpoints */
+  --breakpoint-mobile: 900px;
+  --breakpoint-tablet: 1024px;
+
+  /* Font family variables (will be set in layout.tsx) */
+  --font-poppins: var(--font-poppins);
+  --font-abril: var(--font-abril);
+}
+
+/* Custom component classes for animations and effects */
+@layer components {
+  /* Hover underline animation effect */
+  .hover-underline {
+    @apply relative;
+  }
+
+  .hover-underline::after {
+    content: '';
+    @apply absolute left-0 w-0 h-[3px] bg-white transition-all duration-500 ease-in-out;
+    bottom: -6px;
+  }
+
+  .hover-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Active tab underline */
+  .tab-underline-active::after {
+    @apply w-1/2;
+  }
+
+  /* Dark mode overrides for underlines */
+  .dark .hover-underline::after {
+    @apply bg-bronze-300;
+  }
+}
+
+/* Base styles - Dark mode only */
+body {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  background-color: #040303;
+  color: #eeecec;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  font-family: var(--font-abril), 'Abril Fatface', serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible styles for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid #d8af85;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #d8af85;
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem 1.5rem;
+  background-color: #c9995b;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.skip-to-content:focus {
+  left: 0;
+  top: 0;
+}
+
+/* Disable hover effects on mobile */
+@media (max-width: 900px) and (hover: none) {
+  .hover-underline:hover::after {
+    @apply w-0;
+  }
+}
