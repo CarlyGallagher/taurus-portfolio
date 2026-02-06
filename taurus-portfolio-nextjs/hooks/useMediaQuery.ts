@@ -7,13 +7,16 @@ import { useEffect, useState } from 'react';
  * Returns true if the media query matches
  */
 export function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  // Lazy initializer to set initial state on mount
+  const [matches, setMatches] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.matchMedia(query).matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
-    setMounted(true);
     const mediaQuery = window.matchMedia(query);
-    setMatches(mediaQuery.matches);
 
     const handler = (event: MediaQueryListEvent) => {
       setMatches(event.matches);
@@ -31,11 +34,6 @@ export function useMediaQuery(query: string): boolean {
     }
   }, [query]);
 
-  // Return false during SSR to prevent hydration mismatch
-  if (!mounted) {
-    return false;
-  }
-
   return matches;
 }
 
@@ -44,11 +42,4 @@ export function useMediaQuery(query: string): boolean {
  */
 export function useIsMobile() {
   return useMediaQuery('(max-width: 900px)');
-}
-
-/**
- * Convenience hook for tablet breakpoint (1024px)
- */
-export function useIsTablet() {
-  return useMediaQuery('(max-width: 1024px)');
 }

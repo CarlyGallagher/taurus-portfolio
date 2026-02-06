@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
         pathname: '/gh/devicons/devicon@latest/**',
       },
     ],
+    qualities: [75, 85],
   },
 };
 
