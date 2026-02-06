@@ -59,10 +59,10 @@ export default function TabSystem() {
                 <Image
                   src={skill.icon}
                   alt={skill.name}
-                  width={64}
-                  height={64}
-                  className={`w-16 h-16 ${skill.name === 'GitHub' || skill.name === 'Next.js' ? 'invert' : ''}`}
-                  style={{ width: 'auto', height: 'auto' }}
+                  width={34}
+                  height={34}
+                  className={`w-[34px] h-[34px] ${skill.name === 'GitHub' || skill.name === 'Next.js' ? 'invert' : ''}`}
+                  style={{ width: '50%', height: 'auto' }}
                 />
                 <span className="text-white text-sm text-center">{skill.name}</span>
               </div>

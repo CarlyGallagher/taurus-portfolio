@@ -1,28 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import ContactDropdown from '@/components/features/ContactDropdown';
-import SocialsDropdown from '@/components/features/SocialsDropdown';
 import MobileMenu from '@/components/features/MobileMenu';
 import { resumePath } from '@/constants/data';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [contactOpen, setContactOpen] = useState(false);
-  const [socialsOpen, setSocialsOpen] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
-
-  // Mutual exclusivity for dropdowns
-  const toggleContact = () => {
-    setContactOpen(!contactOpen);
-    if (!contactOpen) setSocialsOpen(false);
-  };
-
-  const toggleSocials = () => {
-    setSocialsOpen(!socialsOpen);
-    if (!socialsOpen) setContactOpen(false);
-  };
 
   const NavLinks = () => (
     <ul className="flex flex-col md:flex-row items-center gap-6 p-4 md:p-0" role="list">
@@ -38,8 +23,45 @@ export default function Navbar() {
         </a>
       </li>
 
-      <ContactDropdown isOpen={contactOpen} onToggle={toggleContact} />
-      <SocialsDropdown isOpen={socialsOpen} onToggle={toggleSocials} />
+      <li>
+        <a
+          href="#about"
+          className="text-white hover-underline"
+          aria-label="Jump to skills section"
+        >
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#projects"
+          className="text-white hover-underline"
+          aria-label="Jump to projects section"
+        >
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#contact"
+          className="text-white hover-underline"
+          aria-label="Jump to contact section"
+        >
+          Contact
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#contact"
+          className="text-white hover-underline"
+          aria-label="Jump to socials section"
+        >
+          Socials
+        </a>
+      </li>
     </ul>
   );
 

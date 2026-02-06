@@ -14,7 +14,7 @@ import {
   faUsers,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faSquareGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 // Prevent FontAwesome from adding its CSS since we did it manually above
 config.autoAddCss = false;
@@ -28,7 +28,8 @@ library.add(
   faUsers,
   faBars,
   faLinkedin,
-  faSquareGithub
+  faSquareGithub,
+  faInstagram
 );
 
 // Font configurations

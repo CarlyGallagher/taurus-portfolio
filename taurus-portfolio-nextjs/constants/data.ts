@@ -201,6 +201,11 @@ export const socialLinks: SocialLink[] = [
     url: 'https://github.com/CarlyGallagher',
     icon: 'fa-square-github',
   },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/carlyjgallagher/',
+    icon: 'fa-instagram',
+  },
 ];
 
 // Contact information for the Contact dropdown
