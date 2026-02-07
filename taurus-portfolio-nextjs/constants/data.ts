@@ -114,7 +114,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'Vercel',
-    icon: 'https://cdn.simpleicons.org/vercel/000000',
+    icon: '/images/vercel.svg',
   },
   {
     name: 'npm',
@@ -126,7 +126,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'Resend',
-    icon: 'https://cdn.simpleicons.org/resend/000000',
+    icon: '/images/resend.svg',
   },
 ];
 
