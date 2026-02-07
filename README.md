@@ -169,7 +169,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Carly Gallagher**
 
-- Portfolio: [https://carlygallagherdev.netlify.app/]
+- Portfolio: https://carlygallagherdev.netlify.app/
 - LinkedIn: [linkedin.com/in/Carly-gallagher-software-engineer](https://www.linkedin.com/in/Carly-gallagher-software-engineer/)
 - GitHub: [@CarlyGallagher](https://github.com/CarlyGallagher)
 - Instagram: [@carlyjgallagher](https://www.instagram.com/carlyjgallagher/)
@@ -179,4 +179,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ⭐ If you found this project helpful, please consider giving it a star!
 
-Built with ❤️ using Next.js and TypeScript
+Built with 💖 using Next.js and TypeScript
