@@ -113,6 +113,10 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg',
   },
   {
+    name: 'Vercel',
+    icon: 'https://cdn.simpleicons.org/vercel/000000',
+  },
+  {
     name: 'npm',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg',
   },

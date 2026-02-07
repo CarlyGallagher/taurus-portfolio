@@ -54,14 +54,15 @@ export default function TabSystem() {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-bronze-800/30 transition-colors duration-300"
+                className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-bronze-800/30 transition-colors duration-300 skill-card"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <Image
                   src={skill.icon}
                   alt={skill.name}
                   width={34}
                   height={34}
-                  className={`w-[34px] h-[34px] ${skill.name === 'GitHub' || skill.name === 'Next.js' || skill.name === 'Resend' ? 'invert' : ''}`}
+                  className={`w-[34px] h-[34px] ${skill.name === 'GitHub' || skill.name === 'Next.js' || skill.name === 'Resend' || skill.name === 'Vercel' ? 'invert' : ''}`}
                   style={{ width: '50%', height: 'auto' }}
                 />
                 <span className="text-white text-sm text-center">{skill.name}</span>
