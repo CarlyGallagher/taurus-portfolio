@@ -169,11 +169,11 @@ export const projects: Project[] = [
     alt: 'Favorite Movies React app screenshot',
   },
   {
-    name: 'Christmas Planner',
-    url: 'https://christmas-planner-theta.vercel.app/',
-    description: 'A holiday planning and organization application',
-    image: '/images/christmas-planner.png',
-    alt: 'Christmas Planner app screenshot',
+    name: 'Raspberry Management Tour App',
+    url: 'https://www.tour.raspberrymanagement.com/',
+    description: 'A tour management and booking application',
+    image: '/images/tour-app.png',
+    alt: 'Tour App screenshot',
   },
 ];
 
