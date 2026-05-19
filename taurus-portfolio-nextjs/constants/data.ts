@@ -128,6 +128,38 @@ export const skills: Skill[] = [
     name: 'Resend',
     icon: '/images/resend.svg',
   },
+  {
+    name: 'AWS',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+  },
+  {
+    name: 'OpenAI API',
+    icon: '/images/openai.svg',
+  },
+  {
+    name: 'Claude',
+    icon: 'https://cdn.simpleicons.org/anthropic',
+  },
+  {
+    name: 'Postman',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+  },
+  {
+    name: 'TanStack Query',
+    icon: 'https://cdn.simpleicons.org/reactquery',
+  },
+  {
+    name: 'JWT Auth',
+    icon: 'https://cdn.simpleicons.org/jsonwebtokens',
+  },
+  {
+    name: 'Render',
+    icon: 'https://cdn.simpleicons.org/render',
+  },
+  {
+    name: 'Azure',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+  },
 ];
 
 // Experience data for the About section tabs

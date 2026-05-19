@@ -62,7 +62,7 @@ export default function TabSystem() {
                   alt={skill.name}
                   width={34}
                   height={34}
-                  className={`w-[34px] h-[34px] ${skill.name === 'GitHub' || skill.name === 'Next.js' || skill.name === 'Resend' || skill.name === 'Vercel' ? 'invert' : ''}`}
+                  className={`w-[34px] h-[34px] ${['GitHub', 'Next.js', 'Resend', 'Vercel', 'AWS', 'OpenAI API', 'Claude', 'JWT Auth', 'Render'].includes(skill.name) ? 'invert' : ''}`}
                   style={{ width: '50%', height: 'auto' }}
                 />
                 <span className="text-white text-sm text-center">{skill.name}</span>
